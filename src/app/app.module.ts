@@ -11,6 +11,10 @@ import { PrivadoPageComponent } from './componentes/privado-page/privado-page.co
 import { NotFoundPageComponent } from './componentes/not-found-page/not-found-page.component';
 import { RegisterComponent } from './componentes/register/register.component';
 import { PedidoComponent } from './componentes/pedido/pedido.component';
+import { ModalComponent } from './componentes/modal/modal.component';
+import { BusquedaClienteComponent } from './componentes/busqueda-cliente/busqueda-cliente.component';
+import { RegisterClienteComponent } from './componentes/register-cliente/register-cliente.component';
+import { InfoClienteComponent } from './componentes/info-cliente/info-cliente.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { PedidoComponent } from './componentes/pedido/pedido.component';
     PrivadoPageComponent,
     NotFoundPageComponent,
     RegisterComponent,
-    PedidoComponent
+    PedidoComponent,
+    ModalComponent,
+    BusquedaClienteComponent,
+    RegisterClienteComponent,
+    InfoClienteComponent
   ],
   imports: [
     BrowserModule,
