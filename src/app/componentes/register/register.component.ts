@@ -9,7 +9,7 @@ import {Location} from '@angular/common';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  usuario= new Usuario;
+  usuario = new Usuario;
   submitted = false;
 
   constructor(private userServiceService: UserServiceService, private location: Location) {}
