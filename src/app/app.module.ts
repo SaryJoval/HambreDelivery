@@ -16,7 +16,10 @@ import { BusquedaClienteComponent } from './componentes/busqueda-cliente/busqued
 import { RegisterClienteComponent } from './componentes/register-cliente/register-cliente.component';
 import { InfoClienteComponent } from './componentes/info-cliente/info-cliente.component';
 import { HambreServiceService } from './hambre-service.service';
+
 import { HttpClientModule } from '@angular/common/http';
+import { UserServiceService } from './servicios/user-service.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -37,9 +40,10 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [HambreServiceService],
+  providers: [HambreServiceService, UserServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

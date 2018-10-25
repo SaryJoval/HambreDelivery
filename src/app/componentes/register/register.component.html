@@ -6,14 +6,14 @@
             <h1>REGISTRO</h1>
           </div>
           
-          <form>
+          <form (ngSubmit)="onSubmit()">
             <div class="form-group">
               <label for="usuario">Usuario</label>
-              <input type="text" name="usuario" id="usuario" class="form-control">
+              <input type="text" name="usuario" id="usuario" class="form-control" required [(ngModel)]="usuario.usuNom" >
             </div>
             <div class="form-group">
               <label for= "password">Contraseña</label>
-              <input type="password" name="password" id="password" class="form-control">
+              <input type="password" name="password" id="password" class="form-control" required [(ngModel)]="usuario.usuPas">
             </div>
             <div class="form-group">
               <label for="exampleSelect1">Tipo de usuario</label>
@@ -22,7 +22,7 @@
                 <option>Operador</option>
               </select>
             </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block">INGRESAR</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">REGISTRAR</button>
           </form>
         </div>
       </div>
